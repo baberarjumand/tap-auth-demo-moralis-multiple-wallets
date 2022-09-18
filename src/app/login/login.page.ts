@@ -14,4 +14,12 @@ export class LoginPage implements OnInit {
   logIn() {
     this.authService.login();
   }
+
+  logInWithMetamask() {
+    this.authService.loginWithMetamask();
+  }
+
+  logInWithWalletConnect() {
+    this.authService.loginWithWalletConnect();
+  }
 }

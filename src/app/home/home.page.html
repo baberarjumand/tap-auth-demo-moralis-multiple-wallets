@@ -8,6 +8,16 @@
     <p>This view is only accessible by authenticated users.</p>
     <br />
 
+    <p>Moralis User ID:</p>
+    <p>{{ currentUser.id }}</p>
+    <br />
+
+    <p>Connected Wallets:</p>
+    <p *ngFor="let acc of currentUser?.attributes.accounts">{{ acc }}</p>
+    <br />
+
+    <ion-button (click)="addMetamaskWallet()">Add Metamask Wallet</ion-button>
+    <ion-button>Add WalletConnect Wallet</ion-button>
     <ion-button (click)="logOut()">Log Out</ion-button>
   </div>
 </ion-content>

@@ -3,8 +3,12 @@
     <h1>Login</h1>
 
     <p>Please click below to sign in.</p>
-    <br />
+    <div class="btn-div">
+      <ion-button (click)="logInWithMetamask()">Sign In with Metamask</ion-button>
+    </div>
 
-    <ion-button (click)="logIn()">Log In</ion-button>
+    <div class="btn-div">
+      <ion-button (click)="logInWithWalletConnect()">Sign In with WalletConnect</ion-button>
+    </div>
   </div>
 </ion-content>
