@@ -27,9 +27,9 @@ export class HomePage implements OnInit, OnDestroy {
     }
   }
 
-  addMetamaskWallet() {
-    this.authService.loginWithMetamask();
-  }
+  // addMetamaskWallet() {
+  //   this.authService.loginWithMetamask();
+  // }
 
   logOut() {
     this.authService.logOut();
